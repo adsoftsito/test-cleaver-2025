@@ -1,0 +1,51 @@
+<div class="list row">
+  <div class="col-md-6">
+    
+    <div class="form-group">
+      <label for="description">Filtrar por Carrera </label>
+      <select
+        class="form-control"
+        id="programaInteres"
+        required
+        [(ngModel)]="programaInteres"
+        name="programaInteres"
+        (change)="retrieveTestsByProgram()"
+      >
+      <option value="LIS2024">LIC ING DE SOFTWARE 2024</option>
+      <option value="LC2024">LIC CONTADURIA 2024</option>
+      <option value="LAE2024">LIC ADMINISTRACION 2024</option>
+      <option value="LGE2024">LIC GESTION Y DIRECCION DE NEGOCIOS 2024</option>
+      <option value="LTIO2024">LIC TEC DE INFORMACION ORG 2024</option>
+      <option value="LPOL2024">LIC CIENCIAS POLITICAS Y GESTION PUB. 2024</option>
+      <option value="MEIT2024">MEIT 2024</option>
+      
+      </select>
+    </div>
+
+    <h3>{{n}} estudiantes </h3>
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        *ngFor="let test of tests; let i = index"
+        [class.active]="i == currentIndex"
+        (click)="setActiveTest(test, i)"
+      >
+       {{i+1}}  {{test.appPaterno}}-{{test.appMaterno}}, {{test.nombre}} :   {{ test.Result }} /
+       {{test.message}} 
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <div *ngIf="currentTest">
+      <app-test-uv-web-details
+        (refreshList)="refreshList()"
+        [test]="currentTest"
+      ></app-test-uv-web-details>
+    </div>
+
+    <div *ngIf="!currentTest">
+      <br />
+      <p>Seleccione un estudiante ...</p>
+    </div>
+  </div>
+</div>
