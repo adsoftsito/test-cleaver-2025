@@ -5,7 +5,7 @@ import { TestUvWebService } from 'src/app/services/test-uv-web.service';
 @Component({
   selector: 'app-add-test-uv-web',
   templateUrl: './add-test-uv-web.component.html',
-  styleUrls: ['./add-test-uv-web.component.css']
+  styleUrls: ['./add-test-uv-web.component.css'],
 })
 export class AddTestUvWebComponent {
   test: Test = new Test();
@@ -18,7 +18,6 @@ export class AddTestUvWebComponent {
   itemCarreraError = '';
   itemPeriodoError = '';
   itemFacultadError = '';
-
 
   item1Error = '';
   item2Error = '';
@@ -47,180 +46,40 @@ export class AddTestUvWebComponent {
 
   missingValuesError = '';
 
-  arrMD: Array<number> = [1,
-    5,
-    10,
-    20,
-    30,
-    40,
-    50,
-    60,
-    65,
-    75,
-    84,
-    87,
-    90,
-    93,
-    95,
-    97,
-    97,
-    98,
-    98,
-    98,
-    99];
+  arrMD: Array<number> = [
+    1, 5, 10, 20, 30, 40, 50, 60, 65, 75, 84, 87, 90, 93, 95, 97, 97, 98, 98,
+    98, 99,
+  ];
 
   arrMI: Array<number> = [
-    4,
-    10,
-    25,
-    40,
-    55,
-    70,
-    82,
-    90,
-    95,
-    96,
-    97,
-    97,
-    97,
-    97,
-    97,
-    97,
-    97,
-    99];
+    4, 10, 25, 40, 55, 70, 82, 90, 95, 96, 97, 97, 97, 97, 97, 97, 97, 99,
+  ];
 
   arrMS: Array<number> = [
-    5,
-    10,
-    16,
-    30,
-    40,
-    55,
-    63,
-    75,
-    84,
-    90,
-    95,
-    96,
-    97,
-    97,
-    97,
-    97,
-    98,
-    98,
-    98,
-    99]
+    5, 10, 16, 30, 40, 55, 63, 75, 84, 90, 95, 96, 97, 97, 97, 97, 98, 98, 98,
+    99,
+  ];
 
   arrMC: Array<number> = [
-    1,
-    5,
-    16,
-    30,
-    55,
-    70,
-    84,
-    93,
-    95,
-    97,
-    97,
-    97,
-    98,
-    98,
-    98,
-    99
-  ]
-
+    1, 5, 16, 30, 55, 70, 84, 93, 95, 97, 97, 97, 98, 98, 98, 99,
+  ];
 
   arrLD: Array<number> = [
-    99,
-    95,
-    87,
-    80,
-    65,
-    55,
-    50,
-    35,
-    30,
-    20,
-    18,
-    15,
-    10,
-    6,
-    5,
-    4,
-    3,
-    2,
-    2,
-    2,
-    2,
-    1
+    99, 95, 87, 80, 65, 55, 50, 35, 30, 20, 18, 15, 10, 6, 5, 4, 3, 2, 2, 2, 2,
+    1,
   ];
 
   arrLI: Array<number> = [
-    99,
-    95,
-    87,
-    75,
-    55,
-    40,
-    25,
-    16,
-    10,
-    5,
-    4,
-    4,
-    3,
-    3,
-    3,
-    2,
-    2,
-    2,
-    2,
-    1
+    99, 95, 87, 75, 55, 40, 25, 16, 10, 5, 4, 4, 3, 3, 3, 2, 2, 2, 2, 1,
   ];
 
   arrLS: Array<number> = [
-    99,
-    97,
-    95,
-    87,
-    80,
-    65,
-    55,
-    35,
-    28,
-    18,
-    10,
-    5,
-    4,
-    3,
-    3,
-    3,
-    2,
-    2,
-    2,
-    1
-  ]
+    99, 97, 95, 87, 80, 65, 55, 35, 28, 18, 10, 5, 4, 3, 3, 3, 2, 2, 2, 1,
+  ];
 
   arrLC: Array<number> = [
-    99,
-    97,
-    95,
-    90,
-    84,
-    70,
-    55,
-    40,
-    38,
-    23,
-    10,
-    5,
-    4,
-    3,
-    2,
-    2,
-    1
-  ]
+    99, 97, 95, 90, 84, 70, 55, 40, 38, 23, 10, 5, 4, 3, 2, 2, 1,
+  ];
 
   arrtempTC: number[][] = [
     [-21, 1],
@@ -264,8 +123,8 @@ export class AddTestUvWebComponent {
     [17, 98],
     [18, 98],
     [19, 98],
-    [20, 99]
-  ]
+    [20, 99],
+  ];
 
   arrTD = {
     '-21': 1,
@@ -309,9 +168,8 @@ export class AddTestUvWebComponent {
     '17': 98,
     '18': 98,
     '19': 98,
-    '20': 99
+    '20': 99,
   };
-
 
   arrTI = {
     '-19': 1,
@@ -350,8 +208,7 @@ export class AddTestUvWebComponent {
     '14': 98,
     '15': 98,
     '16': 98,
-    '17': 99
-
+    '17': 99,
   };
 
   arrTS = {
@@ -393,7 +250,7 @@ export class AddTestUvWebComponent {
     '16': 98,
     '17': 98,
     '18': 98,
-    '19': 99
+    '19': 99,
   };
 
   arrTC = {
@@ -428,98 +285,97 @@ export class AddTestUvWebComponent {
     '12': 98,
     '13': 98,
     '14': 98,
-    '15': 99
+    '15': 99,
   };
 
-
   arrInter = {
-    '1': 'Persuasivo	el que tiene fuerza para hacer creer a otros una cosa, convencer de algo.',
-    '2': 'Gentil	el que actúa con cortesía y soltura, con urbanidad. El amable, gallardo, con gracia.',
-    '3': 'Humilde	sencillo, que no alardea (no interpretar como vida cristiana)',
-    '4': 'Original	el que no es imitación de otro, el singular.',
-    '5': 'Agresivo	el que demuestra empuje e iniciativa en una forma positiva, no es el propenso a ofender.',
-    '6': 'Alma de la fiesta	el más popular, el que genera mayor atracción en  el grupo.',
-    '7': 'Comodino	el amante de la comodidad, que busca caminos fáciles.',
-    '8': 'Temeroso	el tímido, el cobarde, aprensivo.',
-    '9': 'Agradable	el que agrada y complace, gusta a los demás.',
-    '10': 'Temeroso de Dios	el que reconoce el poder de Dios sobre todas las cosas, religioso',
-    '11': 'Tenaz	el obstinado y testarudo, con inquebrantable fuerza de voluntad para realizar algún objetivo.',
-    '12': 'Atractivo	cualidad de la persona (encanto) que atrae la voluntad de los demás.',
-    '13': 'Cauteloso	el reservado que actúa con cuidado, con precaución.',
-    '14': 'Determinado	el atrevido, que toma resoluciones, preciso y decidido, que define.',
-    '15': 'Convincente	el que sabe convencer y obligar a otro con razones a que reconozca una cosa o cambie de opinión.',
-    '25': 'Fuerza de voluntad	determinación inquebrantable para lograr algo, firmeza.',
-    '26': 'Mente abierta	cualidad para escuchar y recibir otro punto de vista diferente.',
-    '27': 'Complaciente	el que procura ser agradable, servicial, solícito, comedido, conciliador o deferente.',
-    '28': 'Animoso	el que demuestra valor, energía voluntad, intención y esfuerzo para la lucha o el trabajo.',
-    '29': 'Confiado	el presumido y vanidoso, crédulo y sencillo. No el que confía en sí mismo.',
-    '30': 'Simpatizador	el que manifiesta inclinación o afecto natural hacia otras personas.',
-    '31': 'Tolerante	el que reconoce y respeta las opiniones, prácticas y comportamiento de otros, aunque sean diferentes a las de él. No el que sufre con paciencia o el que deja pasar cosas que no son lícitas.',
-    '32': 'Afirmativo	el que responde en la mayoría de las ocasiones de una manera positiva. No el que se sostiene o ratifica lo dicho.',
-    '33': 'Ecuánime	el calmado, sereno, imparcial, inalterable, paciente, prudente. Que tiene siempre el mismo ánimo.',
-    '34': 'Preciso	el puntual y exacto, con claridad y determinado.',
-    '35': 'Nervioso	el ansioso, al que le falta sentido de seguridad',
-    '36': 'Jovial	el apacible, alegre y festivo.',
-    '37': 'Disciplinado	el acostumbrado a la obediencia, a seguir las reglas.',
-    '38': 'Generoso	el que obra con magnanimidad y nobleza, liberal dadivoso y franco.',
-    '39': 'Animoso	el que demuestra valor, energía voluntad, intención y esfuerzo para la lucha o el trabajo.',
-    '40': 'Persistente	el que supera obstáculos, el que es constante, y perseverante, el que se mantiene en un propósito.',
-    '41': 'Competitivo	el que contiende o disputa con otros por una causa de superación común por perfección o por la posesión de propiedades.',
-    '42': 'Alegre	el  que está lleno de alegría y la ocasiona en otros. Contento de animo, festivo.',
-    '43': 'Considerado	el que obra con reflexión y que trata con respeto a los demás.',
-    '44': 'Armonioso	el que tiene amistad y buena correspondencia, el que no tiene fricciones con otros.',
-    '45': 'Admirable	que es digno de admiración. Notable.',
-    '46': 'Bondadoso	el que es muy bueno, humanitario.',
-    '47': 'Resignado	el que se conforma, se sujeta, el condescendiente. El que acepta estar bajo la voluntad de otro.',
-    '48': 'Carácter firme	que no cambia fácilmente su punto de vista o su estilo de condición.',
-    '49': 'Obediente	el que sabe seguir indicaciones sin poner su creatividad, cumple voluntad de quien manda, dócil, subordinado.',
-    '50': 'Quisquilloso	el que fácilmente se agravia u ofende, demasiado delicado en el trato, meticuloso.',
-    '51': 'Inconquistable	que no se deja vencer con ruegos, detalles o agasajos, susceptible.',
-    '52': 'Juguetón	el que tiene buen sentido del humor, aficionado a bromas.',
-    '53': 'Respetuoso	el que guarda reverencia, consideración y cortesía para los demás.',
-    '54': 'Emprendedor	que muestra imaginación instintiva y empuje, que se dedica a resolver situaciones difíciles. Atrevido.',
-    '55': 'Optimista	el que suele ver y juzgar las cosas bajo su aspecto más favorable.',
-    '56': 'Servicial	el que sirve con diligencia, siempre dispuesto a complacer a otros, amable y colaborador.',
-    '57': 'Valiente	el que manifiesta coraje y decisión. El fuerte, enérgico y animoso.',
-    '58': 'Inspirador	el que anima la mente o las emociones de otros; infunde entusiasmo.',
-    '59': 'Sumiso	el que permite por sí mismo estar sujeto a otro. Obediente y dócil.',
-    '60': 'Tímido	callado, no busca sobresalir.',
-    '61': 'Adaptable	el que se ajusta fácilmente a condiciones nuevas o diferentes.',
-    '62': 'Disputador	dado a argüir o debatir razones para, por o contra algo. Discutidor.',
-    '63': 'Indiferente	el que parece en forma sistemática no estar involucrado. No presenta motivo de preferencia.',
-    '64': '"Sangre liviana"	el que a todo el mundo le cae bien, persona simpática.',
-    '65': 'Amiguero	el que busca y goza la compañía de otros, muy sociable.',
-    '66': 'Paciente	el que es capaz de soportar, sabe esperar con calma el momento oportuno.',
-    '67': 'Confianza en sí mismo	confía en sus propias capacidades y recursos, autosuficiente.',
-    '68': 'Mesurado para hablar	medido para hablar, habla lo necesario.',
-    '69': 'Conforme	el satisfecho con lo que tiene, de acuerdo con el parecer de otros.',
-    '70': 'Confiable	persona con la cual se tiene confianza.',
-    '71': 'Pacífico	el que tiene calma y serenidad, amante de la paz.',
-    '72': 'Positivo	optimista.',
-    '73': 'Aventurero	el que busca aventuras',
-    '74': 'Receptivo	persona con capacidad de recibir, facilidad para captar algo',
-    '75': 'Cordial	persona amable, afectuosa, cariñosa.',
-    '76': 'Moderado	guarda medio entre dos extremos, que mantiene un equilibrio en sus acciones.',
-    '77': 'Indulgente	el que perdona fácilmente, tolerante, conciliador.',
-    '78': 'Esteta	el que es aficionado, percibe o cultiva la belleza. Busca en todo la elegancia.',
-    '79': 'Vigoroso	el robusto y fuerte.',
-    '80': 'Sociable	el que busca y necesita del compañerismo de otros, fácil de tratar con él.',
-    '81': 'Parlanchín	persona locuaz, que tiene inclinación por hablar mucho, platicador.',
-    '82': 'Controlado	ejerce influencia resultante en sí mismo y en otros, con dominio de sí.',
-    '83': 'Convencional	el que se mantiene en una trayectoria de uso general.',
-    '84': 'Decisivo	el resuelto, determinado e incuestionable.',
-    '85': 'Cohibido	el que se limita, restringe o controla ante los demás.',
-    '86': 'Exacto	justo, preciso, matemático, calculador.',
-    '87': 'Franco	espontáneo, leal, sincero.',
-    '88': 'Buen compañero	persona sociable, que mantiene armonía con otros.',
-    '89': 'Diplomático	el que se caracteriza por el buen tacto en su trato con la gente.',
-    '90': 'Audaz	el arrogante e insolente. No el osado ni atrevido.',
-    '91': 'Refinado	el elegante y fino en su manera de ser, se distingue.',
-    '92': 'Satisfecho	se contenta o conforma con lo que tiene.',
-    '93': 'Inquieto	el que gusta de lo nuevo, versátil y cambiante.',
-    '94': 'Popular	el que genera atracción en el grupo.',
-    '95': 'Buen vecino	el que actúa con soltura y cortesía.',
-    '96': 'Devoto	el sumiso y fiel.'
+    '1': 'Persuasivo: quien tiene la capacidad de convencer a otros y hacerles creer en algo.',
+    '2': 'Gentil: quien actúa con cortesía, soltura y urbanidad. Amable, gallardo y con gracia.',
+    '3': 'Humilde: sencillo, que no alardea (no interpretar como humildad cristiana).',
+    '4': 'Original: quien no es una imitación de otro, singular.',
+    '5': 'Agresivo: demuestra empuje e iniciativa de manera positiva, no propenso a ofender.',
+    '6': 'Alma de la fiesta: el más popular, quien genera mayor atracción en el grupo.',
+    '7': 'Comodino: amante de la comodidad, busca caminos fáciles.',
+    '8': 'Temeroso: tímido, cobarde, aprensivo.',
+    '9': 'Agradable: quien agrada, complace y es apreciado por los demás.',
+    '10': 'Temeroso de Dios: reconoce el poder de Dios sobre todas las cosas, religioso.',
+    '11': 'Tenaz: obstinado y testarudo, con inquebrantable fuerza de voluntad para alcanzar un objetivo.',
+    '12': 'Atractivo: posee encanto y una cualidad que atrae la voluntad de los demás.',
+    '13': 'Cauteloso: reservado, actúa con cuidado y precaución.',
+    '14': 'Determinado: atrevido, toma resoluciones con precisión y decisión.',
+    '15': 'Convincente: sabe persuadir y hacer que otros reconozcan una idea o cambien de opinión.',
+    '25': 'Fuerza de voluntad: determinación inquebrantable para lograr algo, firmeza.',
+    '26': 'Mente abierta: capacidad para escuchar y aceptar diferentes puntos de vista.',
+    '27': 'Complaciente: procura ser agradable, servicial, conciliador y deferente.',
+    '28': 'Animoso: demuestra valor, energía, voluntad, intención y esfuerzo en la lucha o el trabajo.',
+    '29': 'Confiado: presumido y vanidoso, crédulo y sencillo (no quien confía en sí mismo).',
+    '30': 'Simpatizador: muestra inclinación o afecto natural hacia otras personas.',
+    '31': 'Tolerante: respeta opiniones y comportamientos distintos sin necesidad de compartirlos.',
+    '32': 'Afirmativo: responde generalmente de manera positiva (no implica ratificación de lo dicho).',
+    '33': 'Ecuánime: calmado, sereno, imparcial, inalterable y prudente. Mantiene un estado de ánimo constante.',
+    '34': 'Preciso: puntual, exacto y claro en sus acciones y palabras.',
+    '35': 'Nervioso: ansioso, con falta de seguridad.',
+    '36': 'Jovial: apacible, alegre y festivo.',
+    '37': 'Disciplinado: habituado a la obediencia y al cumplimiento de reglas.',
+    '38': 'Generoso: actúa con magnanimidad, nobleza y disposición a dar.',
+    '39': 'Animoso: demuestra valor, energía, voluntad e intención en el trabajo o la lucha.',
+    '40': 'Persistente: supera obstáculos con constancia y perseverancia, mantiene sus propósitos.',
+    '41': 'Competitivo: contiende con otros por superación, perfección o posesión de algo.',
+    '42': 'Alegre: lleno de entusiasmo y capaz de contagiarlo a otros.',
+    '43': 'Considerado: reflexivo y respetuoso con los demás.',
+    '44': 'Armonioso: mantiene buenas relaciones sin conflictos.',
+    '45': 'Admirable: digno de admiración, notable.',
+    '46': 'Bondadoso: de gran calidad humana, compasivo.',
+    '47': 'Resignado: se conforma y se somete a la voluntad de otro.',
+    '48': 'Carácter firme: mantiene su punto de vista o estilo sin cambios fáciles.',
+    '49': 'Obediente: sigue indicaciones sin añadir creatividad propia, sumiso y subordinado.',
+    '50': 'Quisquilloso: se ofende fácilmente, meticuloso en el trato.',
+    '51': 'Inconquistable: no se deja persuadir fácilmente, resistente a ruegos o detalles.',
+    '52': 'Juguetón: con buen sentido del humor, aficionado a las bromas.',
+    '53': 'Respetuoso: muestra reverencia, consideración y cortesía hacia los demás.',
+    '54': 'Emprendedor: imaginativo y resolutivo, enfrenta situaciones difíciles con decisión.',
+    '55': 'Optimista: ve y juzga las cosas bajo su aspecto más favorable.',
+    '56': 'Servicial: atento y dispuesto a ayudar, amable y colaborador.',
+    '57': 'Valiente: manifiesta coraje y decisión, fuerte y enérgico.',
+    '58': 'Inspirador: anima y motiva a los demás, infunde entusiasmo.',
+    '59': 'Sumiso: se sujeta a la voluntad de otro, obediente y dócil.',
+    '60': 'Tímido: callado, no busca sobresalir.',
+    '61': 'Adaptable: se ajusta fácilmente a condiciones nuevas o diferentes.',
+    '62': 'Disputador: propenso a argumentar y debatir, discutidor.',
+    '63': 'Indiferente: no muestra interés o preferencia por algo.',
+    '64': '"Sangre liviana": cae bien a todos, persona simpática y agradable.',
+    '65': 'Amiguero: busca y disfruta la compañía de otros, sociable.',
+    '66': 'Paciente: soporta y espera con calma el momento oportuno.',
+    '67': 'Confianza en sí mismo: seguro de sus capacidades y recursos, autosuficiente.',
+    '68': 'Mesurado para hablar: habla con prudencia y lo necesario.',
+    '69': 'Conforme: satisfecho con lo que tiene, acepta la opinión de otros.',
+    '70': 'Confiable: inspira confianza en los demás.',
+    '71': 'Pacífico: tranquilo, amante de la paz.',
+    '72': 'Positivo: optimista, enfocado en lo favorable.',
+    '73': 'Aventurero: busca y disfruta nuevas experiencias.',
+    '74': 'Receptivo: con facilidad para captar y asimilar información.',
+    '75': 'Cordial: amable, afectuoso y cariñoso.',
+    '76': 'Moderado: equilibra sus acciones y evita extremos.',
+    '77': 'Indulgente: perdona fácilmente, conciliador.',
+    '78': 'Esteta: aprecia y cultiva la belleza, busca la elegancia.',
+    '79': 'Vigoroso: robusto y fuerte.',
+    '80': 'Sociable: disfruta y necesita la compañía de otros.',
+    '81': 'Parlanchín: habla mucho, comunicativo.',
+    '82': 'Controlado: domina sus emociones y ejerce influencia sobre otros.',
+    '83': 'Convencional: se mantiene en lo comúnmente aceptado.',
+    '84': 'Decisivo: resuelto y determinado.',
+    '85': 'Cohibido: se restringe o controla ante los demás.',
+    '86': 'Exacto: justo, preciso, calculador.',
+    '87': 'Franco: espontáneo, leal y sincero.',
+    '88': 'Buen compañero: sociable, fomenta la armonía.',
+    '89': 'Diplomático: trata a las personas con tacto y buen criterio.',
+    '90': 'Audaz: atrevido y osado, no insolente.',
+    '91': 'Refinado: elegante y distinguido en su manera de ser.',
+    '92': 'Satisfecho: contento con lo que tiene.',
+    '93': 'Inquieto: busca novedades, versátil y dinámico.',
+    '94': 'Popular: genera atracción en su grupo social.',
+    '95': 'Buen vecino: cortés y de buen trato con los demás.',
+    '96': 'Devoto: fiel y comprometido.',
   };
 
   MD: any;
@@ -560,9 +416,45 @@ export class AddTestUvWebComponent {
   Result: any;
 
   message = '';
-  greenClass: string | string[] | Set<string> | { [klass: string]: any; } | null | undefined;
+  greenClass:
+    | string
+    | string[]
+    | Set<string>
+    | { [klass: string]: any }
+    | null
+    | undefined;
 
   currentQuestionIndex = 0;
+  arrFlags: boolean[] = new Array(25).fill(false);
+
+  validateNextPage(page: number): number {
+    console.log('page: ' + page);
+    let itemAmount = 0;
+
+    if (page == 0) {
+      itemAmount = 5;
+    } else {
+      itemAmount = page * 2 + 5;
+    }
+
+    console.log('itemAmount: ' + itemAmount);
+    let validateGroupsValue = this.validateGroups();
+    console.log('validateGroups: ' + validateGroupsValue);
+
+    if (itemAmount == validateGroupsValue || this.arrFlags[page] == true) {
+      this.arrFlags[page] = true;
+      return 1;
+    }
+
+    return 0;
+  }
+
+  toNextPage(page: number) {
+    if (this.validateNextPage(page) == 1) {
+      this.siguientePregunta();
+      console.log('toNextPage: ' + this.currentQuestionIndex);
+    }
+  }
 
   anteriorPregunta() {
     if (this.currentQuestionIndex > 0) {
@@ -571,7 +463,7 @@ export class AddTestUvWebComponent {
   }
 
   siguientePregunta() {
-    if (this.currentQuestionIndex < 23) {
+    if (this.currentQuestionIndex < 24) {
       this.currentQuestionIndex++;
     }
   }
@@ -580,76 +472,80 @@ export class AddTestUvWebComponent {
     var textFill = 0;
     console.log(myText);
 
-    if ((myText != "-") && (myText != ""))
-      textFill = 1;
+    if (myText != '-' && myText != '') textFill = 1;
     return textFill;
   }
-  constructor(private testUvWebService: TestUvWebService) {
-    this.test.appPaterno = "";
-    this.test.appMaterno = "";
-    this.test.nombre = "";
-    this.test.facebook = "";
-    this.test.programaInteres = "";
-    this.test.periodo = "2025";
-    this.test.facultad = "fnt";
 
+  constructor(private testUvWebService: TestUvWebService) {
+    this.test.appPaterno = '';
+    this.test.appMaterno = '';
+    this.test.nombre = '';
+    this.test.facebook = '';
+    this.test.programaInteres = '';
+    this.test.periodo = '2025';
+    this.test.facultad = 'fnt';
   }
 
   validateGroups(): number {
     var sumGroups = 0;
 
     var itemApPaterno = this.validateText(this.test.appPaterno as string);
-    if (itemApPaterno == 0) this.itemApPaternoError = "Ap Paterno requerido."
-    else this.itemApPaternoError = ""
+    if (itemApPaterno == 0)
+      this.itemApPaternoError = 'Apellido paterno requerido.';
+    else this.itemApPaternoError = '';
 
     var itemApMaterno = this.validateText(this.test.appMaterno as string);
-    if (itemApMaterno == 0) this.itemApMaternoError = "Ap Materno requerido."
-    else this.itemApMaternoError = ""
+    if (itemApMaterno == 0)
+      this.itemApMaternoError = 'Apellido materno requerido.';
+    else this.itemApMaternoError = '';
 
     var itemNombre = this.validateText(this.test.nombre as string);
-    if (itemNombre == 0) this.itemNombreError = "Nombre requerido."
-    else this.itemNombreError = ""
+    if (itemNombre == 0) this.itemNombreError = 'Nombre requerido.';
+    else this.itemNombreError = '';
 
     var itemMatricula = this.validateText(this.test.facebook as string);
-    if (itemMatricula == 0) this.itemMatriculaError = "Matricula requerida."
-    else this.itemMatriculaError = ""
+    if (itemMatricula == 0) this.itemMatriculaError = 'Matricula requerida.';
+    else this.itemMatriculaError = '';
 
     var itemCarrera = this.validateText(this.test.programaInteres as string);
-    if (itemCarrera == 0) this.itemCarreraError = "Carrera requerida."
-    else this.itemCarreraError = ""
+    if (itemCarrera == 0) this.itemCarreraError = 'Carrera requerida.';
+    else this.itemCarreraError = '';
 
     var itemPeriodo = this.validateText(this.test.periodo as string);
-    if (itemPeriodo == 0) this.itemCarreraError = "Carrera requerida."
-    else this.itemCarreraError = ""
+    if (itemPeriodo == 0) this.itemCarreraError = 'Carrera requerida.';
+    else this.itemCarreraError = '';
 
     var itemFacultad = this.validateText(this.test.facultad as string);
-    if (itemFacultad == 0) this.itemCarreraError = "Carrera requerida."
-    else this.itemCarreraError = ""
+    if (itemFacultad == 0) this.itemCarreraError = 'Carrera requerida.';
+    else this.itemCarreraError = '';
 
-
-    var item1 = this.validateItem(this.test.persuasivoM as number,
+    var item1 = this.validateItem(
+      this.test.persuasivoM as number,
       this.test.persuasivoL as number,
       this.test.gentilM as number,
       this.test.gentilL as number,
       this.test.humildeM as number,
       this.test.humildeL as number,
       this.test.originalM as number,
-      this.test.originalL as number,
+      this.test.originalL as number
     );
-    if (item1 < 2)
-      this.item1Error = "Grupo 1 requerido ...";
+    if (item1 < 2) {
+      if(this.item1Error != 'ERROR: Seleccione diferentes categorias') {
+        this.item1Error = 'Pregunta 1 requerida.';
+      }
+    }
 
-    var item2 = this.validateItem(this.test.fuerzavoluntadM as number,
+    var item2 = this.validateItem(
+      this.test.fuerzavoluntadM as number,
       this.test.fuerzavoluntadL as number,
       this.test.menteabiertaM as number,
       this.test.menteabiertaL as number,
       this.test.complacienteM as number,
       this.test.complacienteL as number,
       this.test.animosoM as number,
-      this.test.animosoL as number,
+      this.test.animosoL as number
     );
-    if (item2 < 2)
-      this.item2Error = "Grupo 2 requerido ...";
+    if (item2 < 2) this.item2Error = 'Pregunta 2 requerida.';
 
     var item3 = this.validateItem(
       this.test.obedienteM as number,
@@ -659,10 +555,9 @@ export class AddTestUvWebComponent {
       this.test.inconquistableM as number,
       this.test.inconquistableL as number,
       this.test.juguetonM as number,
-      this.test.juguetonL as number,
+      this.test.juguetonL as number
     );
-    if (item3 < 2)
-      this.item3Error = "Grupo 3 requerido ...";
+    if (item3 < 2) this.item3Error = 'Pregunta 3 requerida.';
 
     var item4 = this.validateItem(
       this.test.aventureroM as number,
@@ -672,11 +567,9 @@ export class AddTestUvWebComponent {
       this.test.cordialM as number,
       this.test.cordialL as number,
       this.test.moderadoM as number,
-      this.test.moderadoL as number,
+      this.test.moderadoL as number
     );
-    if (item4 < 2)
-      this.item4Error = "Grupo 4 requerido ...";
-
+    if (item4 < 2) this.item4Error = 'Pregunta 4 requerida.';
 
     var item5 = this.validateItem(
       this.test.agresivoM as number,
@@ -686,10 +579,9 @@ export class AddTestUvWebComponent {
       this.test.comodinoM as number,
       this.test.comodinoL as number,
       this.test.temerosoM as number,
-      this.test.temerosoL as number,
+      this.test.temerosoL as number
     );
-    if (item5 < 2)
-      this.item5Error = "Grupo 5 requerido ...";
+    if (item5 < 2) this.item5Error = 'Pregunta 5 requerida.';
 
     var item6 = this.validateItem(
       this.test.confiadoM as number,
@@ -699,10 +591,9 @@ export class AddTestUvWebComponent {
       this.test.toleranteM as number,
       this.test.toleranteL as number,
       this.test.afirmativoM as number,
-      this.test.afirmativoL as number,
+      this.test.afirmativoL as number
     );
-    if (item6 < 2)
-      this.item6Error = "Grupo 6 requerido ...";
+    if (item6 < 2) this.item6Error = 'Pregunta 6 requerida.';
 
     var item7 = this.validateItem(
       this.test.respetuosoM as number,
@@ -712,10 +603,9 @@ export class AddTestUvWebComponent {
       this.test.optimistaM as number,
       this.test.optimistaL as number,
       this.test.servicialM as number,
-      this.test.servicialL as number,
+      this.test.servicialL as number
     );
-    if (item7 < 2)
-      this.item7Error = "Grupo 7 requerido ...";
+    if (item7 < 2) this.item7Error = 'Pregunta 7 requerida.';
 
     var item8 = this.validateItem(
       this.test.indulgenteM as number,
@@ -725,11 +615,9 @@ export class AddTestUvWebComponent {
       this.test.vigorosoM as number,
       this.test.vigorosoL as number,
       this.test.sociableM as number,
-      this.test.sociableL as number,
+      this.test.sociableL as number
     );
-    if (item8 < 2)
-      this.item8Error = "Grupo 8 requerido ...";
-
+    if (item8 < 2) this.item8Error = 'Pregunta 8 requerida.';
 
     var item9 = this.validateItem(
       this.test.agradableM as number,
@@ -739,11 +627,9 @@ export class AddTestUvWebComponent {
       this.test.tenazM as number,
       this.test.tenazL as number,
       this.test.atractivoM as number,
-      this.test.atractivoL as number,
+      this.test.atractivoL as number
     );
-    if (item9 < 2)
-      this.item9Error = "Grupo 9 requerido ...";
-
+    if (item9 < 2) this.item9Error = 'Pregunta 9 requerida.';
 
     var item10 = this.validateItem(
       this.test.ecuanimeM as number,
@@ -753,10 +639,9 @@ export class AddTestUvWebComponent {
       this.test.nerviosoM as number,
       this.test.nerviosoL as number,
       this.test.jovialM as number,
-      this.test.jovialL as number,
+      this.test.jovialL as number
     );
-    if (item10 < 2)
-      this.item10Error = "Grupo 10 requerido ...";
+    if (item10 < 2) this.item10Error = 'Pregunta 10 requerida.';
 
     var item11 = this.validateItem(
       this.test.valienteM as number,
@@ -766,10 +651,9 @@ export class AddTestUvWebComponent {
       this.test.sumisoM as number,
       this.test.sumisoL as number,
       this.test.timidoM as number,
-      this.test.timidoL as number,
+      this.test.timidoL as number
     );
-    if (item11 < 2)
-      this.item11Error = "Grupo 11 requerido ...";
+    if (item11 < 2) this.item11Error = 'Pregunta 11 requerida.';
 
     var item12 = this.validateItem(
       this.test.parlanchinM as number,
@@ -779,10 +663,9 @@ export class AddTestUvWebComponent {
       this.test.convencionalM as number,
       this.test.convencionalL as number,
       this.test.decisivoM as number,
-      this.test.decisivoL as number,
+      this.test.decisivoL as number
     );
-    if (item12 < 2)
-      this.item12Error = "Grupo 12 requerido ...";
+    if (item12 < 2) this.item12Error = 'Pregunta 12 requerida.';
 
     var item13 = this.validateItem(
       this.test.cautelosoM as number,
@@ -792,10 +675,9 @@ export class AddTestUvWebComponent {
       this.test.convincenteM as number,
       this.test.convincenteL as number,
       this.test.bonachonM as number,
-      this.test.bonachonL as number,
+      this.test.bonachonL as number
     );
-    if (item13 < 2)
-      this.item13Error = "Grupo 13 requerido ...";
+    if (item13 < 2) this.item13Error = 'Pregunta 13 requerida.';
 
     var item14 = this.validateItem(
       this.test.disciplinadoM as number,
@@ -805,10 +687,9 @@ export class AddTestUvWebComponent {
       this.test.ani_mosoM as number,
       this.test.ani_mosoL as number,
       this.test.persistenteM as number,
-      this.test.persistenteL as number,
+      this.test.persistenteL as number
     );
-    if (item14 < 2)
-      this.item14Error = "Grupo 14 requerido ...";
+    if (item14 < 2) this.item14Error = 'Pregunta 14 requerida.';
 
     var item15 = this.validateItem(
       this.test.adaptableM as number,
@@ -818,10 +699,9 @@ export class AddTestUvWebComponent {
       this.test.indiferenteM as number,
       this.test.indiferenteL as number,
       this.test.sangrelivianaM as number,
-      this.test.sangrelivianaL as number,
+      this.test.sangrelivianaL as number
     );
-    if (item15 < 2)
-      this.item15Error = "Grupo 15 requerido ...";
+    if (item15 < 2) this.item15Error = 'Pregunta 15 requerida.';
 
     var item16 = this.validateItem(
       this.test.cohibidoM as number,
@@ -831,10 +711,9 @@ export class AddTestUvWebComponent {
       this.test.francoM as number,
       this.test.francoL as number,
       this.test.buencompaneroM as number,
-      this.test.buencompaneroL as number,
+      this.test.buencompaneroL as number
     );
-    if (item16 < 2)
-      this.item16Error = "Grupo 16 requerido ...";
+    if (item16 < 2) this.item16Error = 'Pregunta 16 requerida.';
 
     var item17 = this.validateItem(
       this.test.docilM as number,
@@ -844,10 +723,9 @@ export class AddTestUvWebComponent {
       this.test.lealM as number,
       this.test.lealL as number,
       this.test.encantadorM as number,
-      this.test.encantadorL as number,
+      this.test.encantadorL as number
     );
-    if (item17 < 2)
-      this.item17Error = "Grupo 17 requerido ...";
+    if (item17 < 2) this.item17Error = 'Pregunta 17 requerida.';
 
     var item18 = this.validateItem(
       this.test.competitivoM as number,
@@ -857,10 +735,9 @@ export class AddTestUvWebComponent {
       this.test.consideradoM as number,
       this.test.consideradoL as number,
       this.test.armoniosoM as number,
-      this.test.armoniosoL as number,
+      this.test.armoniosoL as number
     );
-    if (item18 < 2)
-      this.item18Error = "Grupo 18 requerido ...";
+    if (item18 < 2) this.item18Error = 'Pregunta 18 requerida.';
 
     var item19 = this.validateItem(
       this.test.amigueroM as number,
@@ -870,10 +747,9 @@ export class AddTestUvWebComponent {
       this.test.confianzamismoM as number,
       this.test.confianzamismoL as number,
       this.test.mesuradohablarM as number,
-      this.test.mesuradohablarL as number,
+      this.test.mesuradohablarL as number
     );
-    if (item19 < 2)
-      this.item19Error = "Grupo 19 requerido ...";
+    if (item19 < 2) this.item19Error = 'Pregunta 19 requerida.';
 
     var item20 = this.validateItem(
       this.test.diplomaticoM as number,
@@ -883,10 +759,9 @@ export class AddTestUvWebComponent {
       this.test.refinadoM as number,
       this.test.refinadoL as number,
       this.test.satisfechoM as number,
-      this.test.satisfechoL as number,
+      this.test.satisfechoL as number
     );
-    if (item20 < 2)
-      this.item20Error = "Grupo 20 requerido ...";
+    if (item20 < 2) this.item20Error = 'Pregunta 20 requerida.';
 
     var item21 = this.validateItem(
       this.test.dispuestoM as number,
@@ -896,10 +771,9 @@ export class AddTestUvWebComponent {
       this.test.consecuenteM as number,
       this.test.consecuenteL as number,
       this.test.entusiastaM as number,
-      this.test.entusiastaL as number,
+      this.test.entusiastaL as number
     );
-    if (item21 < 2)
-      this.item21Error = "Grupo 21 requerido ...";
+    if (item21 < 2) this.item21Error = 'Pregunta 21 requerida.';
 
     var item22 = this.validateItem(
       this.test.admirableM as number,
@@ -909,10 +783,9 @@ export class AddTestUvWebComponent {
       this.test.resignadoM as number,
       this.test.resignadoL as number,
       this.test.caracterfirmeM as number,
-      this.test.caracterfirmeL as number,
+      this.test.caracterfirmeL as number
     );
-    if (item22 < 2)
-      this.item22Error = "Grupo 22 requerido ...";
+    if (item22 < 2) this.item22Error = 'Pregunta 22 requerida.';
 
     var item23 = this.validateItem(
       this.test.conformeM as number,
@@ -922,10 +795,9 @@ export class AddTestUvWebComponent {
       this.test.pacificoM as number,
       this.test.pacificoL as number,
       this.test.positivoM as number,
-      this.test.positivoL as number,
+      this.test.positivoL as number
     );
-    if (item23 < 2)
-      this.item23Error = "Grupo 23 requerido ...";
+    if (item23 < 2) this.item23Error = 'Pregunta 23 requerida.';
 
     var item24 = this.validateItem(
       this.test.inquietoM as number,
@@ -935,36 +807,53 @@ export class AddTestUvWebComponent {
       this.test.buenvecinoM as number,
       this.test.buenvecinoL as number,
       this.test.devotoM as number,
-      this.test.devotoL as number,
+      this.test.devotoL as number
     );
-    if (item24 < 2)
-      this.item24Error = "Grupo 24 requerido ...";
+    if (item24 < 2) this.item24Error = 'Pregunta 24 requerida.';
 
-
-
-    sumGroups = itemApPaterno + itemApMaterno + itemNombre + itemMatricula + itemCarrera +
-      item1 + item2 + item3 + item4 +
-      item5 + item6 + item7 + item8 +
-      item9 + item10 + item11 + item12 +
-      item13 + item14 + item15 + item16 +
-      item17 + item18 + item19 + item20 +
-      item21 + item22 + item23 + item24;
-    console.log("total " + sumGroups);
+    sumGroups =
+      itemApPaterno +
+      itemApMaterno +
+      itemNombre +
+      itemMatricula +
+      itemCarrera +
+      item1 +
+      item2 +
+      item3 +
+      item4 +
+      item5 +
+      item6 +
+      item7 +
+      item8 +
+      item9 +
+      item10 +
+      item11 +
+      item12 +
+      item13 +
+      item14 +
+      item15 +
+      item16 +
+      item17 +
+      item18 +
+      item19 +
+      item20 +
+      item21 +
+      item22 +
+      item23 +
+      item24;
+    console.log('total ' + sumGroups);
     return sumGroups;
   }
 
   saveTest(): void {
-
     var sumGroups = this.validateGroups();
     //console.log(sumGroups);
 
     if (sumGroups < 53) {
-      this.missingValuesError = "LLenar campos requeridos"
-    }
-    else {
+      this.missingValuesError = 'LLenar campos requeridos';
+    } else {
       this.calculateTest();
-      this.missingValuesError = "guardando ..."
-
+      this.missingValuesError = 'Guardando ...';
 
       this.testUvWebService.create(this.test).then(() => {
         console.log('Created new item successfully!');
@@ -974,14 +863,13 @@ export class AddTestUvWebComponent {
   }
 
   calculateTest() {
-
-
     console.log(this.test);
 
     this.message = '';
 
     // 7
-    this.MD = Number(this.test.agresivoM) +
+    this.MD =
+      Number(this.test.agresivoM) +
       Number(this.test.tenazM) +
       Number(this.test.determinadoM) +
       Number(this.test.atrevidoM) +
@@ -994,15 +882,16 @@ export class AddTestUvWebComponent {
       Number(this.test.valienteM) +
       Number(this.test.disputadorM) +
       Number(this.test.confianzamismoM) +
-      Number(this.test.positivoM)
+      Number(this.test.positivoM);
     Number(this.test.aventureroM) +
       Number(this.test.vigorosoM) +
       Number(this.test.decisivoM) +
       Number(this.test.francoM) +
       Number(this.test.audazM) +
       Number(this.test.inquietoM);
-    // 1          
-    this.MI = Number(this.test.persuasivoM) +
+    // 1
+    this.MI =
+      Number(this.test.persuasivoM) +
       Number(this.test.almafiestaM) +
       Number(this.test.atractivoM) +
       Number(this.test.convincenteM) +
@@ -1020,8 +909,9 @@ export class AddTestUvWebComponent {
       Number(this.test.parlanchinM) +
       Number(this.test.buencompaneroM) +
       Number(this.test.popularM);
-    //10         
-    this.MS = Number(this.test.gentilM) +
+    //10
+    this.MS =
+      Number(this.test.gentilM) +
       Number(this.test.comodinoM) +
       Number(this.test.bonachonM) +
       Number(this.test.lealM) +
@@ -1041,7 +931,8 @@ export class AddTestUvWebComponent {
       Number(this.test.satisfechoM) +
       Number(this.test.buenvecinoM);
     // 2
-    this.MC = Number(this.test.humildeM) +
+    this.MC =
+      Number(this.test.humildeM) +
       Number(this.test.temerosodiosM) +
       Number(this.test.cautelosoM) +
       Number(this.test.consecuenteM) +
@@ -1058,7 +949,8 @@ export class AddTestUvWebComponent {
       Number(this.test.devotoM);
 
     // 4
-    this.LD = Number(this.test.originalL) +
+    this.LD =
+      Number(this.test.originalL) +
       Number(this.test.tenazL) +
       Number(this.test.atractivoL) +
       Number(this.test.entusiastaL) +
@@ -1071,7 +963,7 @@ export class AddTestUvWebComponent {
       Number(this.test.caracterfirmeL) +
       Number(this.test.inconquistableL) +
       Number(this.test.emprendedorL) +
-      Number(this.test.disputadorL)
+      Number(this.test.disputadorL);
     Number(this.test.confianzamismoL) +
       Number(this.test.positivoL) +
       Number(this.test.aventureroL) +
@@ -1082,7 +974,8 @@ export class AddTestUvWebComponent {
       Number(this.test.inquietoL);
 
     // 7
-    this.LI = Number(this.test.almafiestaL) +
+    this.LI =
+      Number(this.test.almafiestaL) +
       Number(this.test.atractivoL) +
       Number(this.test.convincenteL) +
       Number(this.test.encantadorL) +
@@ -1103,7 +996,8 @@ export class AddTestUvWebComponent {
       Number(this.test.popularL);
 
     // 5
-    this.LS = Number(this.test.gentilL) +
+    this.LS =
+      Number(this.test.gentilL) +
       Number(this.test.comodinoL) +
       Number(this.test.agradableL) +
       Number(this.test.complacienteL) +
@@ -1124,7 +1018,8 @@ export class AddTestUvWebComponent {
       Number(this.test.buenvecinoL);
 
     // 3
-    this.LC = Number(this.test.humildeL) +
+    this.LC =
+      Number(this.test.humildeL) +
       Number(this.test.temerosoL) +
       Number(this.test.temerosodiosL) +
       Number(this.test.cautelosoL) +
@@ -1137,15 +1032,13 @@ export class AddTestUvWebComponent {
       Number(this.test.quisquillosoL) +
       Number(this.test.timidoL) +
       Number(this.test.pacificoL) +
-      Number(this.test.estetaL)
-    Number(this.test.convencionalL) +
-      Number(this.test.devotoL);
+      Number(this.test.estetaL);
+    Number(this.test.convencionalL) + Number(this.test.devotoL);
 
     this.TotD = Number(this.MD) - Number(this.LD);
     this.TotI = Number(this.MI) - Number(this.LI);
     this.TotS = Number(this.MS) - Number(this.LS);
     this.TotC = Number(this.MC) - Number(this.LC);
-
 
     this.ResultMD = this.arrMD[this.MD];
     this.ResultMI = this.arrMI[this.MI];
@@ -1157,37 +1050,35 @@ export class AddTestUvWebComponent {
     this.ResultLS = this.arrLS[this.LS];
     this.ResultLC = this.arrLC[this.LC];
 
-
-    this.ResultTotD = this.arrTD[(this.TotD as number)];
-    this.ResultTotI = this.arrTI[(this.TotI as number)];
-    this.ResultTotS = this.arrTS[(this.TotS as number)];
-    this.ResultTotC = this.arrTC[(this.TotC as number)];
-
+    this.ResultTotD = this.arrTD[this.TotD as number];
+    this.ResultTotI = this.arrTI[this.TotI as number];
+    this.ResultTotS = this.arrTS[this.TotS as number];
+    this.ResultTotC = this.arrTC[this.TotC as number];
 
     var arrTotalT: Array<number> = [
       this.ResultTotD,
       this.ResultTotI,
       this.ResultTotS,
       this.ResultTotC,
-    ]
+    ];
 
     var arrTotalM: Array<number> = [
       this.ResultMD,
       this.ResultMI,
       this.ResultMS,
       this.ResultMC,
-    ]
+    ];
 
     var arrTotalL: Array<number> = [
       this.ResultLD,
       this.ResultLI,
       this.ResultLS,
       this.ResultLC,
-    ]
+    ];
 
-    var maxFinalT = Math.max(...arrTotalT.map(o => o));
-    var maxFinalM = Math.max(...arrTotalM.map(o => o));
-    var maxFinalL = Math.max(...arrTotalL.map(o => o));
+    var maxFinalT = Math.max(...arrTotalT.map((o) => o));
+    var maxFinalM = Math.max(...arrTotalM.map((o) => o));
+    var maxFinalL = Math.max(...arrTotalL.map((o) => o));
 
     this.FinalT = maxFinalT;
     this.FinalM = maxFinalM;
@@ -1195,8 +1086,7 @@ export class AddTestUvWebComponent {
 
     this.FinalResult = (this.FinalT + this.FinalM + this.FinalL) / 3;
     this.Result = this.FinalResult.toFixed(0);
-    this.message = this.arrInter[(this.Result as number)];
-
+    this.message = this.arrInter[this.Result as number];
 
     //this.submitted = true;
 
@@ -1207,10 +1097,6 @@ export class AddTestUvWebComponent {
     this.test.FinalResult = this.FinalResult;
     this.test.Result = this.Result;
     this.test.message = this.message;
-
-
-
-
   }
 
   newTest(): void {
@@ -1219,26 +1105,32 @@ export class AddTestUvWebComponent {
   }
 
   setDuplicateError(value: number): string {
-    var message = ""
-    if (value == 1)
-      message = "ERROR: Seleccione Diferentes categorias";
+    var message = '';
+    if (value == 1) message = 'ERROR: Seleccione diferentes categorias';
     return message;
   }
 
-  validateItem(value0: number, value1: number, value2: number, value3: number,
-    value4: number, value5: number, value6: number, value7: number
+  validateItem(
+    value0: number,
+    value1: number,
+    value2: number,
+    value3: number,
+    value4: number,
+    value5: number,
+    value6: number,
+    value7: number
   ): number {
-    var sum = value0 + value1 + value2 + value3 + value4 + value5 + value6 + value7;
-    if ((value0 == 1) && (value1 == 1)) sum = 0;
-    if ((value2 == 1) && (value3 == 1)) sum = 0;
-    if ((value4 == 1) && (value5 == 1)) sum = 0;
-    if ((value6 == 1) && (value7 == 1)) sum = 0;
+    var sum =
+      value0 + value1 + value2 + value3 + value4 + value5 + value6 + value7;
+    if (value0 == 1 && value1 == 1) sum = 0;
+    if (value2 == 1 && value3 == 1) sum = 0;
+    if (value4 == 1 && value5 == 1) sum = 0;
+    if (value6 == 1 && value7 == 1) sum = 0;
 
     return sum;
   }
 
   setM1(value: Number): Number {
-
     this.test.persuasivoM = 0;
     this.test.gentilM = 0;
     this.test.humildeM = 0;
@@ -1263,12 +1155,10 @@ export class AddTestUvWebComponent {
       this.item1Error = this.setDuplicateError(this.test.originalL as number);
     }
 
-
     return 1;
   }
 
   setL1(value: Number): void {
-
     this.test.persuasivoL = 0;
     this.test.gentilL = 0;
     this.test.humildeL = 0;
@@ -1315,12 +1205,9 @@ export class AddTestUvWebComponent {
         this.item1Error = "";
       } */
     }
-
   }
 
-
   setM2(value: Number): Number {
-
     this.test.fuerzavoluntadM = 0;
     this.test.menteabiertaM = 0;
     this.test.complacienteM = 0;
@@ -1328,19 +1215,22 @@ export class AddTestUvWebComponent {
 
     if (value == 0) {
       this.test.fuerzavoluntadM = 1;
-      this.item2Error = this.setDuplicateError(this.test.fuerzavoluntadL as number);
-
+      this.item2Error = this.setDuplicateError(
+        this.test.fuerzavoluntadL as number
+      );
     }
 
     if (value == 1) {
       this.test.menteabiertaM = 1;
-      this.item2Error = this.setDuplicateError(this.test.menteabiertaL as number);
-
+      this.item2Error = this.setDuplicateError(
+        this.test.menteabiertaL as number
+      );
     }
     if (value == 2) {
       this.test.complacienteM = 1;
-      this.item2Error = this.setDuplicateError(this.test.competitivoL as number);
-
+      this.item2Error = this.setDuplicateError(
+        this.test.competitivoL as number
+      );
     }
     if (value == 3) {
       this.test.animosoM = 1;
@@ -1351,7 +1241,6 @@ export class AddTestUvWebComponent {
   }
 
   setL2(value: Number): Number {
-
     this.test.fuerzavoluntadL = 0;
     this.test.menteabiertaL = 0;
     this.test.complacienteL = 0;
@@ -1359,19 +1248,23 @@ export class AddTestUvWebComponent {
 
     if (value == 0) {
       this.test.fuerzavoluntadL = 1;
-      this.item2Error = this.setDuplicateError(this.test.fuerzavoluntadM as number);
-
+      this.item2Error = this.setDuplicateError(
+        this.test.fuerzavoluntadM as number
+      );
     }
 
     if (value == 1) {
       this.test.menteabiertaL = 1;
-      this.item2Error = this.setDuplicateError(this.test.menteabiertaM as number);
-
+      this.item2Error = this.setDuplicateError(
+        this.test.menteabiertaM as number
+      );
     }
 
     if (value == 2) {
       this.test.complacienteL = 1;
-      this.item2Error = this.setDuplicateError(this.test.complacienteM as number);
+      this.item2Error = this.setDuplicateError(
+        this.test.complacienteM as number
+      );
     }
 
     if (value == 3) {
@@ -1382,7 +1275,6 @@ export class AddTestUvWebComponent {
   }
 
   setM3(value: Number): Number {
-
     this.test.obedienteM = 0;
     this.test.quisquillosoM = 0;
     this.test.inconquistableM = 0;
@@ -1395,12 +1287,16 @@ export class AddTestUvWebComponent {
 
     if (value == 1) {
       this.test.quisquillosoM = 1;
-      this.item3Error = this.setDuplicateError(this.test.quisquillosoL as number);
+      this.item3Error = this.setDuplicateError(
+        this.test.quisquillosoL as number
+      );
     }
 
     if (value == 2) {
       this.test.inconquistableM = 1;
-      this.item3Error = this.setDuplicateError(this.test.inconquistableL as number);
+      this.item3Error = this.setDuplicateError(
+        this.test.inconquistableL as number
+      );
     }
 
     if (value == 3) {
@@ -1412,7 +1308,6 @@ export class AddTestUvWebComponent {
   }
 
   setL3(value: Number): Number {
-
     this.test.obedienteL = 0;
     this.test.quisquillosoL = 0;
     this.test.inconquistableL = 0;
@@ -1425,12 +1320,16 @@ export class AddTestUvWebComponent {
 
     if (value == 1) {
       this.test.quisquillosoL = 1;
-      this.item3Error = this.setDuplicateError(this.test.quisquillosoM as number);
+      this.item3Error = this.setDuplicateError(
+        this.test.quisquillosoM as number
+      );
     }
 
     if (value == 2) {
       this.test.inconquistableL = 1;
-      this.item3Error = this.setDuplicateError(this.test.inconquistableM as number);
+      this.item3Error = this.setDuplicateError(
+        this.test.inconquistableM as number
+      );
     }
 
     if (value == 3) {
@@ -1442,7 +1341,6 @@ export class AddTestUvWebComponent {
   }
 
   setM4(value: Number): Number {
-
     this.test.aventureroM = 0;
     this.test.receptivoM = 0;
     this.test.cordialM = 0;
@@ -1472,7 +1370,6 @@ export class AddTestUvWebComponent {
   }
 
   setL4(value: Number): Number {
-
     this.test.aventureroL = 0;
     this.test.receptivoL = 0;
     this.test.cordialL = 0;
@@ -1501,9 +1398,7 @@ export class AddTestUvWebComponent {
     return 1;
   }
 
-
   setM5(value: Number): Number {
-
     this.test.agresivoM = 0;
     this.test.almafiestaM = 0;
     this.test.comodinoM = 0;
@@ -1533,7 +1428,6 @@ export class AddTestUvWebComponent {
   }
 
   setL5(value: Number): Number {
-
     this.test.agresivoL = 0;
     this.test.almafiestaL = 0;
     this.test.comodinoL = 0;
@@ -1563,7 +1457,6 @@ export class AddTestUvWebComponent {
   }
 
   setM6(value: Number): Number {
-
     this.test.confiadoM = 0;
     this.test.simpatizadorM = 0;
     this.test.toleranteM = 0;
@@ -1576,7 +1469,9 @@ export class AddTestUvWebComponent {
 
     if (value == 1) {
       this.test.simpatizadorM = 1;
-      this.item6Error = this.setDuplicateError(this.test.simpatizadorL as number);
+      this.item6Error = this.setDuplicateError(
+        this.test.simpatizadorL as number
+      );
     }
 
     if (value == 2) {
@@ -1593,7 +1488,6 @@ export class AddTestUvWebComponent {
   }
 
   setL6(value: Number): Number {
-
     this.test.confiadoL = 0;
     this.test.simpatizadorL = 0;
     this.test.toleranteL = 0;
@@ -1606,7 +1500,9 @@ export class AddTestUvWebComponent {
 
     if (value == 1) {
       this.test.simpatizadorL = 1;
-      this.item6Error = this.setDuplicateError(this.test.simpatizadorM as number);
+      this.item6Error = this.setDuplicateError(
+        this.test.simpatizadorM as number
+      );
     }
 
     if (value == 2) {
@@ -1622,11 +1518,7 @@ export class AddTestUvWebComponent {
     return 1;
   }
 
-
-
   setM7(value: Number): Number {
-
-
     this.test.respetuosoM = 0;
     this.test.emprendedorM = 0;
     this.test.optimistaM = 0;
@@ -1639,7 +1531,9 @@ export class AddTestUvWebComponent {
 
     if (value == 1) {
       this.test.emprendedorM = 1;
-      this.item7Error = this.setDuplicateError(this.test.emprendedorL as number);
+      this.item7Error = this.setDuplicateError(
+        this.test.emprendedorL as number
+      );
     }
 
     if (value == 2) {
@@ -1656,8 +1550,6 @@ export class AddTestUvWebComponent {
   }
 
   setL7(value: Number): Number {
-
-
     this.test.respetuosoL = 0;
     this.test.emprendedorL = 0;
     this.test.optimistaL = 0;
@@ -1670,7 +1562,9 @@ export class AddTestUvWebComponent {
 
     if (value == 1) {
       this.test.emprendedorL = 1;
-      this.item7Error = this.setDuplicateError(this.test.emprendedorM as number);
+      this.item7Error = this.setDuplicateError(
+        this.test.emprendedorM as number
+      );
     }
 
     if (value == 2) {
@@ -1687,8 +1581,6 @@ export class AddTestUvWebComponent {
   }
 
   setM8(value: Number): Number {
-
-
     this.test.indulgenteM = 0;
     this.test.estetaM = 0;
     this.test.vigorosoM = 0;
@@ -1718,8 +1610,6 @@ export class AddTestUvWebComponent {
   }
 
   setL8(value: Number): Number {
-
-
     this.test.indulgenteL = 0;
     this.test.estetaL = 0;
     this.test.vigorosoL = 0;
@@ -1749,9 +1639,6 @@ export class AddTestUvWebComponent {
   }
 
   setM9(value: Number): Number {
-
-
-
     this.test.agradableM = 0;
     this.test.temerosodiosM = 0;
     this.test.tenazM = 0;
@@ -1764,7 +1651,9 @@ export class AddTestUvWebComponent {
 
     if (value == 1) {
       this.test.temerosodiosM = 1;
-      this.item9Error = this.setDuplicateError(this.test.temerosodiosL as number);
+      this.item9Error = this.setDuplicateError(
+        this.test.temerosodiosL as number
+      );
     }
 
     if (value == 2) {
@@ -1781,9 +1670,6 @@ export class AddTestUvWebComponent {
   }
 
   setL9(value: Number): Number {
-
-
-
     this.test.agradableL = 0;
     this.test.temerosodiosL = 0;
     this.test.tenazL = 0;
@@ -1796,7 +1682,9 @@ export class AddTestUvWebComponent {
 
     if (value == 1) {
       this.test.temerosodiosL = 1;
-      this.item9Error = this.setDuplicateError(this.test.temerosodiosM as number);
+      this.item9Error = this.setDuplicateError(
+        this.test.temerosodiosM as number
+      );
     }
 
     if (value == 2) {
@@ -1813,8 +1701,6 @@ export class AddTestUvWebComponent {
   }
 
   setM10(value: Number): Number {
-
-
     this.test.ecuanimeM = 0;
     this.test.precisoM = 0;
     this.test.nerviosoM = 0;
@@ -1844,8 +1730,6 @@ export class AddTestUvWebComponent {
   }
 
   setL10(value: Number): Number {
-
-
     this.test.ecuanimeL = 0;
     this.test.precisoL = 0;
     this.test.nerviosoL = 0;
@@ -1875,8 +1759,6 @@ export class AddTestUvWebComponent {
   }
 
   setM11(value: Number): Number {
-
-
     this.test.valienteM = 0;
     this.test.inspiradorM = 0;
     this.test.sumisoM = 0;
@@ -1889,7 +1771,9 @@ export class AddTestUvWebComponent {
 
     if (value == 1) {
       this.test.inspiradorM = 1;
-      this.item11Error = this.setDuplicateError(this.test.inspiradorL as number);
+      this.item11Error = this.setDuplicateError(
+        this.test.inspiradorL as number
+      );
     }
 
     if (value == 2) {
@@ -1906,8 +1790,6 @@ export class AddTestUvWebComponent {
   }
 
   setL11(value: Number): Number {
-
-
     this.test.valienteL = 0;
     this.test.inspiradorL = 0;
     this.test.sumisoL = 0;
@@ -1920,7 +1802,9 @@ export class AddTestUvWebComponent {
 
     if (value == 1) {
       this.test.inspiradorL = 1;
-      this.item11Error = this.setDuplicateError(this.test.inspiradorM as number);
+      this.item11Error = this.setDuplicateError(
+        this.test.inspiradorM as number
+      );
     }
 
     if (value == 2) {
@@ -1937,8 +1821,6 @@ export class AddTestUvWebComponent {
   }
 
   setM12(value: Number): Number {
-
-
     this.test.parlanchinM = 0;
     this.test.controladoM = 0;
     this.test.convencionalM = 0;
@@ -1946,17 +1828,23 @@ export class AddTestUvWebComponent {
 
     if (value == 0) {
       this.test.parlanchinM = 1;
-      this.item12Error = this.setDuplicateError(this.test.parlanchinL as number);
+      this.item12Error = this.setDuplicateError(
+        this.test.parlanchinL as number
+      );
     }
 
     if (value == 1) {
       this.test.controladoM = 1;
-      this.item12Error = this.setDuplicateError(this.test.controladoL as number);
+      this.item12Error = this.setDuplicateError(
+        this.test.controladoL as number
+      );
     }
 
     if (value == 2) {
       this.test.convencionalM = 1;
-      this.item12Error = this.setDuplicateError(this.test.convencionalL as number);
+      this.item12Error = this.setDuplicateError(
+        this.test.convencionalL as number
+      );
     }
 
     if (value == 3) {
@@ -1968,8 +1856,6 @@ export class AddTestUvWebComponent {
   }
 
   setL12(value: Number): Number {
-
-
     this.test.parlanchinL = 0;
     this.test.controladoL = 0;
     this.test.convencionalL = 0;
@@ -1977,17 +1863,23 @@ export class AddTestUvWebComponent {
 
     if (value == 0) {
       this.test.parlanchinL = 1;
-      this.item12Error = this.setDuplicateError(this.test.parlanchinM as number);
+      this.item12Error = this.setDuplicateError(
+        this.test.parlanchinM as number
+      );
     }
 
     if (value == 1) {
       this.test.controladoL = 1;
-      this.item12Error = this.setDuplicateError(this.test.controladoM as number);
+      this.item12Error = this.setDuplicateError(
+        this.test.controladoM as number
+      );
     }
 
     if (value == 2) {
       this.test.convencionalL = 1;
-      this.item12Error = this.setDuplicateError(this.test.convencionalM as number);
+      this.item12Error = this.setDuplicateError(
+        this.test.convencionalM as number
+      );
     }
 
     if (value == 3) {
@@ -1999,8 +1891,6 @@ export class AddTestUvWebComponent {
   }
 
   setM13(value: Number): Number {
-
-
     this.test.cautelosoM = 0;
     this.test.determinadoM = 0;
     this.test.convincenteM = 0;
@@ -2013,12 +1903,16 @@ export class AddTestUvWebComponent {
 
     if (value == 1) {
       this.test.determinadoM = 1;
-      this.item13Error = this.setDuplicateError(this.test.determinadoL as number);
+      this.item13Error = this.setDuplicateError(
+        this.test.determinadoL as number
+      );
     }
 
     if (value == 2) {
       this.test.convincenteM = 1;
-      this.item13Error = this.setDuplicateError(this.test.convincenteL as number);
+      this.item13Error = this.setDuplicateError(
+        this.test.convincenteL as number
+      );
     }
 
     if (value == 3) {
@@ -2029,10 +1923,7 @@ export class AddTestUvWebComponent {
     return 1;
   }
 
-
   setL13(value: Number): Number {
-
-
     this.test.cautelosoL = 0;
     this.test.determinadoL = 0;
     this.test.convincenteL = 0;
@@ -2045,12 +1936,16 @@ export class AddTestUvWebComponent {
 
     if (value == 1) {
       this.test.determinadoL = 1;
-      this.item13Error = this.setDuplicateError(this.test.determinadoM as number);
+      this.item13Error = this.setDuplicateError(
+        this.test.determinadoM as number
+      );
     }
 
     if (value == 2) {
       this.test.convincenteL = 1;
-      this.item13Error = this.setDuplicateError(this.test.convincenteM as number);
+      this.item13Error = this.setDuplicateError(
+        this.test.convincenteM as number
+      );
     }
 
     if (value == 3) {
@@ -2061,10 +1956,7 @@ export class AddTestUvWebComponent {
     return 1;
   }
 
-
   setM14(value: Number): Number {
-
-
     this.test.disciplinadoM = 0;
     this.test.generosoM = 0;
     this.test.ani_mosoM = 0;
@@ -2072,7 +1964,9 @@ export class AddTestUvWebComponent {
 
     if (value == 0) {
       this.test.disciplinadoM = 1;
-      this.item14Error = this.setDuplicateError(this.test.disciplinadoL as number);
+      this.item14Error = this.setDuplicateError(
+        this.test.disciplinadoL as number
+      );
     }
 
     if (value == 1) {
@@ -2087,15 +1981,15 @@ export class AddTestUvWebComponent {
 
     if (value == 3) {
       this.test.persistenteM = 1;
-      this.item14Error = this.setDuplicateError(this.test.persistenteL as number);
+      this.item14Error = this.setDuplicateError(
+        this.test.persistenteL as number
+      );
     }
 
     return 1;
   }
 
   setL14(value: Number): Number {
-
-
     this.test.disciplinadoL = 0;
     this.test.generosoL = 0;
     this.test.ani_mosoL = 0;
@@ -2103,7 +1997,9 @@ export class AddTestUvWebComponent {
 
     if (value == 0) {
       this.test.disciplinadoL = 1;
-      this.item14Error = this.setDuplicateError(this.test.disciplinadoM as number);
+      this.item14Error = this.setDuplicateError(
+        this.test.disciplinadoM as number
+      );
     }
 
     if (value == 1) {
@@ -2118,14 +2014,15 @@ export class AddTestUvWebComponent {
 
     if (value == 3) {
       this.test.persistenteL = 1;
-      this.item14Error = this.setDuplicateError(this.test.persistenteM as number);
+      this.item14Error = this.setDuplicateError(
+        this.test.persistenteM as number
+      );
     }
 
     return 1;
   }
 
   setM15(value: Number): Number {
-
     this.test.adaptableM = 0;
     this.test.disputadorM = 0;
     this.test.indiferenteM = 0;
@@ -2138,23 +2035,28 @@ export class AddTestUvWebComponent {
 
     if (value == 1) {
       this.test.disputadorM = 1;
-      this.item15Error = this.setDuplicateError(this.test.disputadorL as number);
+      this.item15Error = this.setDuplicateError(
+        this.test.disputadorL as number
+      );
     }
 
     if (value == 2) {
       this.test.indiferenteM = 1;
-      this.item15Error = this.setDuplicateError(this.test.indiferenteL as number);
+      this.item15Error = this.setDuplicateError(
+        this.test.indiferenteL as number
+      );
     }
 
     if (value == 3) {
       this.test.sangrelivianaM = 1;
-      this.item15Error = this.setDuplicateError(this.test.sangrelivianaL as number);
+      this.item15Error = this.setDuplicateError(
+        this.test.sangrelivianaL as number
+      );
     }
     return 1;
   }
 
   setL15(value: Number): Number {
-
     this.test.adaptableL = 0;
     this.test.disputadorL = 0;
     this.test.indiferenteL = 0;
@@ -2167,25 +2069,29 @@ export class AddTestUvWebComponent {
 
     if (value == 1) {
       this.test.disputadorL = 1;
-      this.item15Error = this.setDuplicateError(this.test.disputadorM as number);
+      this.item15Error = this.setDuplicateError(
+        this.test.disputadorM as number
+      );
     }
 
     if (value == 2) {
       this.test.indiferenteL = 1;
-      this.item15Error = this.setDuplicateError(this.test.indiferenteM as number);
+      this.item15Error = this.setDuplicateError(
+        this.test.indiferenteM as number
+      );
     }
 
     if (value == 3) {
       this.test.sangrelivianaL = 1;
-      this.item15Error = this.setDuplicateError(this.test.sangrelivianaM as number);
+      this.item15Error = this.setDuplicateError(
+        this.test.sangrelivianaM as number
+      );
     }
 
     return 1;
   }
 
   setM16(value: Number): Number {
-
-
     this.test.cohibidoM = 0;
     this.test.exactoM = 0;
     this.test.francoM = 0;
@@ -2208,15 +2114,15 @@ export class AddTestUvWebComponent {
 
     if (value == 3) {
       this.test.buencompaneroM = 1;
-      this.item16Error = this.setDuplicateError(this.test.buencompaneroL as number);
+      this.item16Error = this.setDuplicateError(
+        this.test.buencompaneroL as number
+      );
     }
 
     return 1;
   }
 
   setL16(value: Number): Number {
-
-
     this.test.cohibidoL = 0;
     this.test.exactoL = 0;
     this.test.francoL = 0;
@@ -2239,14 +2145,15 @@ export class AddTestUvWebComponent {
 
     if (value == 3) {
       this.test.buencompaneroL = 1;
-      this.item16Error = this.setDuplicateError(this.test.buencompaneroM as number);
+      this.item16Error = this.setDuplicateError(
+        this.test.buencompaneroM as number
+      );
     }
 
     return 1;
   }
 
   setM17(value: Number): Number {
-
     this.test.docilM = 0;
     this.test.atrevidoM = 0;
     this.test.lealM = 0;
@@ -2269,14 +2176,15 @@ export class AddTestUvWebComponent {
 
     if (value == 3) {
       this.test.encantadorM = 1;
-      this.item17Error = this.setDuplicateError(this.test.encantadorL as number);
+      this.item17Error = this.setDuplicateError(
+        this.test.encantadorL as number
+      );
     }
 
     return 1;
   }
 
   setL17(value: Number): Number {
-
     this.test.docilL = 0;
     this.test.atrevidoL = 0;
     this.test.lealL = 0;
@@ -2299,14 +2207,15 @@ export class AddTestUvWebComponent {
 
     if (value == 3) {
       this.test.encantadorL = 1;
-      this.item17Error = this.setDuplicateError(this.test.encantadorM as number);
+      this.item17Error = this.setDuplicateError(
+        this.test.encantadorM as number
+      );
     }
 
     return 1;
   }
 
   setM18(value: Number): Number {
-
     this.test.competitivoM = 0;
     this.test.alegreM = 0;
     this.test.consideradoM = 0;
@@ -2314,7 +2223,9 @@ export class AddTestUvWebComponent {
 
     if (value == 0) {
       this.test.competitivoM = 1;
-      this.item18Error = this.setDuplicateError(this.test.competitivoL as number);
+      this.item18Error = this.setDuplicateError(
+        this.test.competitivoL as number
+      );
     }
 
     if (value == 1) {
@@ -2324,7 +2235,9 @@ export class AddTestUvWebComponent {
 
     if (value == 2) {
       this.test.consideradoM = 1;
-      this.item18Error = this.setDuplicateError(this.test.consideradoL as number);
+      this.item18Error = this.setDuplicateError(
+        this.test.consideradoL as number
+      );
     }
 
     if (value == 3) {
@@ -2335,9 +2248,7 @@ export class AddTestUvWebComponent {
     return 1;
   }
 
-
   setL18(value: Number): Number {
-
     this.test.competitivoL = 0;
     this.test.alegreL = 0;
     this.test.consideradoL = 0;
@@ -2345,7 +2256,9 @@ export class AddTestUvWebComponent {
 
     if (value == 0) {
       this.test.competitivoL = 1;
-      this.item18Error = this.setDuplicateError(this.test.competitivoM as number);
+      this.item18Error = this.setDuplicateError(
+        this.test.competitivoM as number
+      );
     }
 
     if (value == 1) {
@@ -2355,7 +2268,9 @@ export class AddTestUvWebComponent {
 
     if (value == 2) {
       this.test.consideradoL = 1;
-      this.item18Error = this.setDuplicateError(this.test.consideradoM as number);
+      this.item18Error = this.setDuplicateError(
+        this.test.consideradoM as number
+      );
     }
 
     if (value == 3) {
@@ -2367,7 +2282,6 @@ export class AddTestUvWebComponent {
   }
 
   setM19(value: Number): Number {
-
     this.test.amigueroM = 0;
     this.test.pacienteM = 0;
     this.test.confianzamismoM = 0;
@@ -2385,19 +2299,22 @@ export class AddTestUvWebComponent {
 
     if (value == 2) {
       this.test.confianzamismoM = 1;
-      this.item19Error = this.setDuplicateError(this.test.confianzamismoL as number);
+      this.item19Error = this.setDuplicateError(
+        this.test.confianzamismoL as number
+      );
     }
 
     if (value == 3) {
       this.test.mesuradohablarM = 1;
-      this.item19Error = this.setDuplicateError(this.test.mesuradohablarL as number);
+      this.item19Error = this.setDuplicateError(
+        this.test.mesuradohablarL as number
+      );
     }
 
     return 1;
   }
 
   setL19(value: Number): Number {
-
     this.test.amigueroL = 0;
     this.test.pacienteL = 0;
     this.test.confianzamismoL = 0;
@@ -2415,20 +2332,22 @@ export class AddTestUvWebComponent {
 
     if (value == 2) {
       this.test.confianzamismoL = 1;
-      this.item19Error = this.setDuplicateError(this.test.confianzamismoM as number);
+      this.item19Error = this.setDuplicateError(
+        this.test.confianzamismoM as number
+      );
     }
 
     if (value == 3) {
       this.test.mesuradohablarL = 1;
-      this.item19Error = this.setDuplicateError(this.test.mesuradohablarM as number);
+      this.item19Error = this.setDuplicateError(
+        this.test.mesuradohablarM as number
+      );
     }
 
     return 1;
   }
 
   setM20(value: Number): Number {
-
-
     this.test.diplomaticoM = 0;
     this.test.audazM = 0;
     this.test.refinadoM = 0;
@@ -2436,7 +2355,9 @@ export class AddTestUvWebComponent {
 
     if (value == 0) {
       this.test.diplomaticoM = 1;
-      this.item20Error = this.setDuplicateError(this.test.diplomaticoL as number);
+      this.item20Error = this.setDuplicateError(
+        this.test.diplomaticoL as number
+      );
     }
 
     if (value == 1) {
@@ -2451,15 +2372,15 @@ export class AddTestUvWebComponent {
 
     if (value == 3) {
       this.test.satisfechoM = 1;
-      this.item20Error = this.setDuplicateError(this.test.satisfechoL as number);
+      this.item20Error = this.setDuplicateError(
+        this.test.satisfechoL as number
+      );
     }
 
     return 1;
   }
 
   setL20(value: Number): Number {
-
-
     this.test.diplomaticoL = 0;
     this.test.audazL = 0;
     this.test.refinadoL = 0;
@@ -2467,7 +2388,9 @@ export class AddTestUvWebComponent {
 
     if (value == 0) {
       this.test.diplomaticoL = 1;
-      this.item20Error = this.setDuplicateError(this.test.diplomaticoM as number);
+      this.item20Error = this.setDuplicateError(
+        this.test.diplomaticoM as number
+      );
     }
 
     if (value == 1) {
@@ -2482,15 +2405,15 @@ export class AddTestUvWebComponent {
 
     if (value == 3) {
       this.test.satisfechoL = 1;
-      this.item20Error = this.setDuplicateError(this.test.satisfechoM as number);
+      this.item20Error = this.setDuplicateError(
+        this.test.satisfechoM as number
+      );
     }
 
     return 1;
   }
 
   setM21(value: Number): Number {
-
-
     this.test.dispuestoM = 0;
     this.test.deseosoM = 0;
     this.test.consecuenteM = 0;
@@ -2508,20 +2431,22 @@ export class AddTestUvWebComponent {
 
     if (value == 2) {
       this.test.consecuenteM = 1;
-      this.item21Error = this.setDuplicateError(this.test.consecuenteL as number);
+      this.item21Error = this.setDuplicateError(
+        this.test.consecuenteL as number
+      );
     }
 
     if (value == 3) {
       this.test.entusiastaM = 1;
-      this.item21Error = this.setDuplicateError(this.test.entusiastaL as number);
+      this.item21Error = this.setDuplicateError(
+        this.test.entusiastaL as number
+      );
     }
 
     return 1;
   }
 
   setL21(value: Number): Number {
-
-
     this.test.dispuestoL = 0;
     this.test.deseosoL = 0;
     this.test.consecuenteL = 0;
@@ -2539,19 +2464,22 @@ export class AddTestUvWebComponent {
 
     if (value == 2) {
       this.test.consecuenteL = 1;
-      this.item21Error = this.setDuplicateError(this.test.consecuenteM as number);
+      this.item21Error = this.setDuplicateError(
+        this.test.consecuenteM as number
+      );
     }
 
     if (value == 3) {
       this.test.entusiastaL = 1;
-      this.item21Error = this.setDuplicateError(this.test.entusiastaM as number);
+      this.item21Error = this.setDuplicateError(
+        this.test.entusiastaM as number
+      );
     }
 
     return 1;
   }
 
   setM22(value: Number): Number {
-
     this.test.admirableM = 0;
     this.test.bondadosoM = 0;
     this.test.resignadoM = 0;
@@ -2574,15 +2502,15 @@ export class AddTestUvWebComponent {
 
     if (value == 3) {
       this.test.caracterfirmeM = 1;
-      this.item22Error = this.setDuplicateError(this.test.caracterfirmeL as number);
+      this.item22Error = this.setDuplicateError(
+        this.test.caracterfirmeL as number
+      );
     }
 
     return 1;
   }
 
-
   setL22(value: Number): Number {
-
     this.test.admirableL = 0;
     this.test.bondadosoL = 0;
     this.test.resignadoL = 0;
@@ -2605,14 +2533,15 @@ export class AddTestUvWebComponent {
 
     if (value == 3) {
       this.test.caracterfirmeL = 1;
-      this.item22Error = this.setDuplicateError(this.test.caracterfirmeM as number);
+      this.item22Error = this.setDuplicateError(
+        this.test.caracterfirmeM as number
+      );
     }
 
     return 1;
   }
 
   setM23(value: Number): Number {
-
     this.test.conformeM = 0;
     this.test.confiableM = 0;
     this.test.pacificoM = 0;
@@ -2642,7 +2571,6 @@ export class AddTestUvWebComponent {
   }
 
   setL23(value: Number): Number {
-
     this.test.conformeL = 0;
     this.test.confiableL = 0;
     this.test.pacificoL = 0;
@@ -2672,8 +2600,6 @@ export class AddTestUvWebComponent {
   }
 
   setM24(value: Number): Number {
-
-
     this.test.inquietoM = 0;
     this.test.popularM = 0;
     this.test.buenvecinoM = 0;
@@ -2691,7 +2617,9 @@ export class AddTestUvWebComponent {
 
     if (value == 2) {
       this.test.buenvecinoM = 1;
-      this.item24Error = this.setDuplicateError(this.test.buenvecinoL as number);
+      this.item24Error = this.setDuplicateError(
+        this.test.buenvecinoL as number
+      );
     }
 
     if (value == 3) {
@@ -2702,10 +2630,7 @@ export class AddTestUvWebComponent {
     return 1;
   }
 
-
   setL24(value: Number): Number {
-
-
     this.test.inquietoL = 0;
     this.test.popularL = 0;
     this.test.buenvecinoL = 0;
@@ -2723,7 +2648,9 @@ export class AddTestUvWebComponent {
 
     if (value == 2) {
       this.test.buenvecinoL = 1;
-      this.item24Error = this.setDuplicateError(this.test.buenvecinoM as number);
+      this.item24Error = this.setDuplicateError(
+        this.test.buenvecinoM as number
+      );
     }
 
     if (value == 3) {
@@ -2733,5 +2660,4 @@ export class AddTestUvWebComponent {
 
     return 1;
   }
-
 }

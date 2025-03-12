@@ -1,2 +1,38 @@
+.submit-form {
+    margin-left: 25%;
+    margin-right: 25%;
+}
 
+/* Ajustar el ancho de la tabla */
+.pregunta-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+/* Ajustar ancho fijo para cada columna */
+.columna-mas,
+.columna-menos {
+    width: 30%;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Asegurar que la columna de los textos tenga espacio suficiente */
+.opcion-texto {
+    width: 40%;
+    padding: 8px;
+}
+
+/* Centrar los radio buttons y evitar que se estiren */
+.radio-cell {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Tamaño uniforme para los radio buttons */
+.custom-radio {
+    width: 20px;
+    height: 20px;
+}
 
